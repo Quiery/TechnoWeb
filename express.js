@@ -1,11 +1,14 @@
 var express = require('express')
 var app = express()
 
-var router  = app.Router
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
   res.send('hello world')
 })
-//app.listen(3000)
-module.exports = router
+// respond with "hello world" when a GET request is made to the homepage
+app.get('/contact', function (req, res) {
+  res.send('contact page!')
+})
+
+app.listen(3000)
