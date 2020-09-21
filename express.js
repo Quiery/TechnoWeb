@@ -6,9 +6,13 @@ var app = express()
 app.get('/', function (req, res) {
   res.send('hello world')
 })
-// respond with "hello world" when a GET request is made to the homepage
+// contact page
 app.get('/contact', function (req, res) {
   res.send('contact page!')
+})
+// about page
+app.get('/about', function (req, res) {
+  res.send('aboout page!')
 })
 
 app.listen(3000)
